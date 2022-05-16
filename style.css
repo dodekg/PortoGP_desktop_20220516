@@ -1,0 +1,499 @@
+/* ------- HEADER ABOVE THE NAVBAR --------------- */
+/* (common for all 5 pages) */
+
+/* IT WILL INCUDE BRAND/LOGO AND GP BRANCHES NAMES WITH LANDLINE
+ PHONE NUMBER AND LINK TO FACEBOOK (THE ONLY SOCIAL MEDIA THEY EXIST AT) */
+
+/* padding: top right bottom left
+margin: top+bottom right+left 
+padding: top right+left bottom */
+
+/* declaring logo size */
+.logoSize{
+    height:100px!important;
+    padding: 0px 10px 0px 10px;
+    /* logo margin right must be high(80) for
+     logo image not to overlap the content on medium screens */
+    margin: 10px 80px 10px 10px;
+}
+.logoSize:hover{
+    opacity:0.7;
+}
+
+/* styling 3 columns after logo (which is the 1st column)
+all 3 include class infoBoard (all three together create "Bar/Board" - where GP info are displayed) */
+.infoBoard{
+    background-color: #dde7e9;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    
+    color:#0569ff;
+    font-weight: 700;
+    font-size:16px;
+    text-transform:uppercase;
+    /* line-height:0.8; */
+}
+
+/* additional styling to the last 4th column (which includes facebook button) */
+
+/* PROBLEM: BUTTON IS STYLED DOWN BELOW (WHERE TOGGLER) - STYLES INTERFERE BETWEEEN EACH OTHER */
+.infoBoard>a>button{
+    background-color: #0569ff;
+    border-radius: 5px;
+    height:50px;
+    width:130px;
+    padding:0px 5px;
+    margin: 5px 0px 0px 0px;
+    border:1px solid white!important;
+    color: white!important;
+}
+
+/* additional styling to the last 4th column (which includes facebook button) in case of HOVER */
+.infoBoard>a>button:hover{
+    border:1px solid #0569ff!important;
+    background-color: white!important;
+    color:#0569ff!important;
+}
+
+/* styling whole the top header (logo and Bar/Board together) */
+.customMarPad{
+    margin:10px 20px 10px 0px;
+    padding:10px;
+}
+
+/* added later (when realized that some header content is missing) */
+.onlineAppointment{
+    padding: 5px 0 0 0;
+    background-color: white;
+    font-size:14px!important;
+    border:5px solid #0569ff;
+    border-radius: 5px;
+    
+}
+
+.onlineAppointment:hover{
+    background-color: #0569ff;
+    color:white;
+    opacity:0.7;
+    /* border:5px solid #ffffff; */
+    border-radius: 5px;
+}
+
+#phone{
+
+    width:50px;
+    height:50px;
+    padding:5px;
+    border-radius:100%;
+    border:5px solid #0569ff;
+    text-align: left;
+}
+
+.onlineAppointment:hover>#phone{
+
+    width:50px;
+    height:50px;
+    padding:5px;
+    border-radius:100%;
+    border:5px solid #ffffff;
+}
+
+/* the code below changes hamburger icon colour(red) ( I think also icon image as well )
+ - it requres to add both classes between <button><span> here </span></button> - in index.html */
+/* .custom-toggler.navbar-toggler-icon{
+    background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");             
+} */
+/* eventually I rely on class navbar-dark (for hamburger)*/
+/* --------------------------------------------------- */
+
+
+/* ------------- NAVBAR NAVBAR NAVBAR ------------------- */
+/* (common for all 5 pages) */
+
+/* CUSTOMIZING NAVBAR - CHANGING BOOTSTRAP RESPONSIVE
+TEMPLATE BY ADDING ROUNDED PILLS MENU (ANOTHER TEMPLATE) */
+
+/* overwritting the whole navbar colour */
+/* color:white for text does not work and therefore moved to nav-link class (down below) */
+
+/* TO CHANGE SOME OF THE COLOURS BELOW I HAD TO REMOVE navbar-light bg-light CLASSES FOR IT TO WORK (index.html)*/
+.navbar{
+    background-color: #0569ff!important;
+    /* color:white!important; */
+}
+
+/*DOES NOT WORK!!!: (hardcoded navbar height):
+.sizeOfMenu{
+    height:75px;
+} */
+
+/* giving a little space between pills */
+.nav-item{
+    margin: 0px 5px;
+    padding: 5px 0px;
+}
+/* colouring navbar pills text */
+.nav-link{
+    color:white;
+}
+/* when mouse is hovering above pills the colours are swaped:
+ text becomes blue and background becomes white (but only on the pill) */
+.nav-link:hover{
+    background-color: white!important;
+    color:#0569ff!important;
+}
+/* adding the active class to current webpage (colour the same as in hover state) */
+.active{
+    background-color: white!important;
+    color:#0569ff!important;
+}
+/* changeing a Search button style (on menu's right side) */
+/* THERE IS A PROBLEM WITH TOGGLER BUTTON - I was trying
+to use a class .btn but does not create an effect
+but with the button attribute I overwrite also toggler */ 
+/* ----------- SOLVED (with the right class in a right place)*/
+
+.navbar-dark{
+    color:white!important;
+}
+
+/* styling search button (before button tag, now stylingSearchButton class) */
+.stylingSearchButton{
+    border:1px solid white!important;
+    color: white!important;
+} 
+/* adding a hover state to Search button  */
+.stylingSearchButton:hover{
+    background-color: white!important;
+    color:#0569ff!important;
+}
+
+/* changind a background colour for Search field - To be honest optional */
+input{
+    background-color: #dde7e9!important;
+    max-width:130px; 
+}
+
+
+/* ---------------------MAIN--------------------------- */
+/* ---------------------MAIN--------------------------- */
+/* content of a MAIN is going to be changed on each page (each navbar menu tab) */
+/* ---------------------MAIN--------------------------- */
+/* there is small margin on the right that needs to be removed ---> it fixed itself */
+/* whole content of "main" is reduced to 80% of full browser screen */
+main{
+    max-width:80%;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+/* ------------------------------------------- */
+/* NEXT SECTION - WITH CAROUSEL *//* (of index.html) */
+/* consider adding some text on top of the slides??? */
+
+
+/* good way to style initialy the carousel - copied from OrgMe project */
+.sizeOfCarousel{
+    max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1%;
+    margin-bottom:1%;
+    opacity:0.5;
+}
+
+/* i could not change the color of cheveron so changing its backgroud is a compromise */
+.carousel-control-prev-icon{
+    background-color:#0569ff;
+}
+.carousel-control-next-icon{
+    background-color:#0569ff;
+}
+
+/* this is the best way to not exceed the certain height by carousel
+not changing the size of the images ===> BUT IT DOES NOT WORK*/
+/* .carouselHeight{
+    height:500px;
+} */
+
+/* think  about this part - you need to fix weird opacity
+ effect and icon disappearing on carousel hover ===> BUT IT DOES NOT WORK */
+/* .carousel-control-prev:hover{
+    opacity:0;
+} */
+
+/* ----- SECOND SECTION IN MAIN - THE IMAGES OF TWO PRACTICE BUILDINGS - LIKE IN WIREFRAMES ----- */
+/* (of index.html) */
+
+.section2Customizing{
+    background-color: #0569ff;
+    margin: 30px 0px 50px 0px;
+}
+
+/* images within the section(blue section2) with captions over the figure 
+using the position propperty */
+figure{
+    margin: 20px;
+    border:5px solid white;
+    position:relative;
+}
+figcaption{
+    position:absolute;
+    bottom:10%;
+    left:20%;
+    color:white!important;
+    font-size:24px;
+    font-weight:900;
+}
+
+/* giving the captions additional black outline - using 1px shadow on every side
+ - just like in wireframes */
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+/* class that makes img to take whole figure container and with half opacity over the blue background */
+.sect2image{
+    width:100%;
+    opacity:0.5;
+}
+/* ----------------------------------End of Sect2------------------------------------------ */
+
+/* ------------------ THIRD SECTION -(of index.html)-------------------------*/
+/* few classes below that control behaviour of text paragrphs in third section */
+
+/* red border containers - styling (like in original DR Comesky and Partners website) */
+.textWithinRedFrame{
+    border:5px solid red;
+    padding:30px 0px;
+    margin: 20px 0px 20px 0px;
+    text-align:center;
+    color:red;
+}
+.textWithinRedFrame>a{
+    text-decoration:none!important;
+    color:brown;
+}
+.textWithinRedFrame>a:hover{
+    background-color: pink;
+}
+/* only bullet points gets aligned left */
+.textWithinRedFrame>b>ul>li{
+    text-align:left;
+}
+/* the last right hand side paragraph(index.html) is a bit different in original Dr Comeskey and Parteners website 
+therefore below I add addtional class*/ /* plus similar anchor link effect like in red conteiners*/
+.fontColorSize{
+    /* color:#0569ff; */
+    color:black;
+    font-size:16px;
+}
+.fontColorSize>a{
+    color:brown;
+}
+.fontColorSize>a:hover{
+    background-color: pink;
+}
+
+/* original has the border between two columns - to be fixed */
+
+/* ----------------------------------End of Sect3------------------------------------------ */
+/* ------------------------------END! - END!- END! of MAIN----------------------------------------------- */
+
+
+/* --------------DIFFERENT PAGE ----------------- */
+/* PRESCRIPTIONS TAB !--- PRESCRIPTIONS TAB !--- PRESCRIPTIONS TAB !  */
+
+.styleSpace{
+    margin: 50px 0px;
+}
+
+.styleImgPres{
+    max-width:100%;
+    max-height:200px;
+}
+
+.styleTextPres{
+    padding: 30px 0px;
+    color:#0569ff!important;
+    position: relative;
+    top:0px;
+    left:0px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.imgHover:hover{
+    opacity:0.75;
+}
+/* ----------------------- END OF PRESCRIPTIONS ------------------------- */
+
+/* --------------DIFFERENT PAGE ----------------- */
+/* STAFF TAB !--- STAFF TAB !--- STAFF TAB !  *//* STAFF TAB !--- STAFF TAB !--- STAFF TAB !  */
+
+.staffTitleStyle{
+    text-align:center;
+    margin:40px 0px;
+}
+
+.staffStyle{
+    font-size:14px;
+    text-align: center;
+}
+
+.staffStyle2{
+    text-align:center;
+}
+
+.staffStyleDoc{
+    text-align: left;
+}
+
+/* ----------------------- END OF STAFF ------------------------- */
+
+
+
+/* --------------DIFFERENT PAGE ----------------- */
+/* -----------REGISTRATION TAB-----REGISTRATION TAB------REGISTRATION TAB------REGISTRATION TAB */
+.h3Styling{
+    margin:40px 0px;
+    text-align: center;
+}
+
+.blueBG{
+    background-color: #0569ff!important;
+    color:white;
+    text-align:center;
+    margin:20px 0px;
+}
+
+.formSectionStyle{
+    text-align: center;
+    margin:40px 0px 20px 0px;
+    padding:40px 0px 0px 0px;
+    border: 5px solid red;
+}
+
+.formSectionStyle>a{
+    color:brown;
+}
+
+.formSectionStyle>a:hover{
+    background-color: pink;
+}
+
+
+.formInfoStyle{
+    padding:60px;
+}
+
+
+/* ----------------------- END OF REGISTRATION ------------------------- */
+
+/* --------------DIFFERENT PAGE ----------------- */
+/* -----------CONTACTS TAB-----CONTACTS TAB------CONTACTS TAB------CONTACTS TAB */
+
+.centerHeader{
+    text-align: center;
+    margin: 40px auto 40px auto;
+}
+
+.styleContacts{
+    
+    margin:0px;
+    padding:0px;
+
+}
+
+.strokeme2{
+    font-size: 20px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+
+}
+
+.sect2image2{
+    width:100%;
+    border:5px solid #0569ff;
+    opacity:0.7;
+}
+
+
+/* class below does not work - because when content collapse there is no border on the left 
+and there is double  border on top (between two containers) */
+/* 
+.middleBorder{
+    border-left:none;
+} */
+
+.wavingFlag2{
+    max-width:80px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.contactTextColour{
+    margin-right:auto;
+    margin-left:10px;
+    color:white;
+    background-color: #0569ff;
+}
+
+.someSpace{
+    margin:60px 0px 60px 0px;
+}
+
+.styleSomeSpace2{
+    border:5px solid red; 
+}
+
+.styleSomeSpace2>a{
+    color:brown;
+    font-size:20px;
+}
+
+.styleSomeSpace2>a:hover{
+
+    background-color: pink;
+}
+
+/* ----------------------- END OF CONTACTS ------------------------- */
+
+/* ----------------THE SAME FOOTER FOR ALL SUB-PAGES IN MAIN MENU -------------------- */
+/* ----------------NEXT SECTION - FOOTER --(common for all 5 pages)----------------------*/
+footer{
+    background-color: #0569ff;
+    color:white;
+}
+
+.footerIMG{
+    margin:10px 10px;
+    padding: 0px 20px;
+    width:100%;
+}
+
+.footerIMG:hover{
+    opacity:0.5;
+}
+
+/* ---------------- SECTION - FOOTER ------------------------*/
+
+
+
+
+
+
+
+
