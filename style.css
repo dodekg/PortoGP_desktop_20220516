@@ -10,7 +10,7 @@ padding: top right+left bottom */
 
 /* declaring logo size */
 .logoSize{
-    height:100px!important;
+    height:100px;
     padding: 0px 10px 0px 10px;
     /* logo margin right must be high(80) for
      logo image not to overlap the content on medium screens */
