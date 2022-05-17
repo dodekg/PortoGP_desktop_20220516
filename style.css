@@ -10,7 +10,9 @@ padding: top right+left bottom */
 
 /* declaring logo size */
 .logoSize{
-    height:100px;
+    /* height:100px; */ /* ================================================> TO BE RESTORED ONCE MARKED !!!!!!!!!!!!!!!!! */
+    /* THE REASON FOR IS TROLL FACE SCRIPT TO BE WORKING IN CONTACTS.HTML (but changes layout on small screens)*/
+
     padding: 0px 10px 0px 10px;
     /* logo margin right must be high(80) for
      logo image not to overlap the content on medium screens */
