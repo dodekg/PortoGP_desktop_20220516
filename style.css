@@ -40,6 +40,7 @@ all 3 include class infoBoard (all three together create "Bar/Board" - where GP 
 /* additional styling to the last 4th column (which includes facebook button) */
 
 /* PROBLEM: BUTTON IS STYLED DOWN BELOW (WHERE TOGGLER) - STYLES INTERFERE BETWEEEN EACH OTHER */
+/* error - button can not be anchor child - but otherwise everything falls apart => to be fixed later */
 .infoBoard>a>button{
     background-color: #0569ff;
     border-radius: 5px;
