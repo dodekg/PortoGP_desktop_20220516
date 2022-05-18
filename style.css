@@ -40,7 +40,7 @@ all 3 include class infoBoard (all three together create "Bar/Board" - where GP 
 /* additional styling to the last 4th column (which includes facebook button) */
 
 /* PROBLEM: BUTTON IS STYLED DOWN BELOW (WHERE TOGGLER) - STYLES INTERFERE BETWEEEN EACH OTHER */
-/* error - button can not be anchor child - but otherwise everything falls apart => to be fixed later */
+/* error - button can not be anchor child - but otherwise everything falls apart => to be fixed later ------------------------------------!!! */
 .infoBoard>a>button{
     background-color: #0569ff;
     border-radius: 5px;
@@ -174,7 +174,7 @@ but with the button attribute I overwrite also toggler */
 }
 
 /* changind a background colour for Search field - To be honest optional */
-input{
+.inputStyling7{
     background-color: #dde7e9!important;
     max-width:130px; 
 }
@@ -470,6 +470,31 @@ and there is double  border on top (between two containers) */
 .styleSomeSpace2>a:hover{
 
     background-color: pink;
+}
+
+.formStylingBG{
+    background-color: #0569ff;
+    color:white;
+    padding:40px;
+}
+
+#emailHelp{
+    color:white!important;
+}
+
+.registerButton{
+    background-color:white!important;
+    color:#0569ff;
+}
+
+.registerButton:hover{
+    background-color:#0569ff!important;
+    color:white;
+    border: 1px solid white;
+}
+
+.firstNameInput{
+    width:100%;
 }
 
 /* ----------------------- END OF CONTACTS ------------------------- */
