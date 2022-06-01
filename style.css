@@ -255,6 +255,7 @@ figcaption{
  - just like in wireframes */
 .strokeme
 {
+	font-size:20px;
     color: white;
     text-shadow:
     -1px -1px 0 #000,
@@ -399,6 +400,18 @@ therefore below I add addtional class*/ /* plus similar anchor link effect like 
 }
 
 
+.greenSection{
+	color:green;
+}
+
+.orangeSection{
+	color:orange;
+}
+
+.blueSection{
+	color:blue;
+}
+
 /* ----------------------- END OF REGISTRATION ------------------------- */
 
 /* --------------DIFFERENT PAGE ----------------- */
@@ -417,7 +430,7 @@ therefore below I add addtional class*/ /* plus similar anchor link effect like 
 }
 
 .strokeme2{
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     text-shadow:
     -1px -1px 0 #000,
